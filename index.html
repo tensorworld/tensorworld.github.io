@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TensorWorld</title>
+  <meta name="description" content="TensorWorld is a research group focused on high-performance computing, sparse and structured tensor methods, irregular algorithms, and systems for AI and scientific workloads.">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <img src="static/img/tensorworld-logo.svg" alt="TensorWorld logo" class="brand-logo">
+        <div>
+          <span class="brand-name">TensorWorld</span>
+          <span class="brand-tag">Systems and Tensor Computing Group</span>
+        </div>
+      </a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#publications">Recent Publications</a>
+        <a href="#software">Software</a>
+        <a href="#people">People</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">North Carolina State University</p>
+        <h1>TensorWorld studies sparse and structured computation across HPC, systems, and AI.</h1>
+        <p class="hero-text">
+          TensorWorld is a research group led by <a href="http://jiajiali.org/">Jiajia Li</a>. We build algorithms,
+          software, and systems for sparse and irregular tensor and matrix workloads, performance analysis,
+          heterogeneous computing, and large-scale AI and scientific applications.
+        </p>
+      </div>
+      <div class="hero-card">
+        <h2>Research Themes</h2>
+        <ul>
+          <li>Sparse and structured tensor methods</li>
+          <li>GPU and heterogeneous systems</li>
+          <li>Performance profiling and analysis</li>
+          <li>Software infrastructure for AI and science</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section">
+      <div class="section-header">
+        <p class="section-kicker">What We Build</p>
+        <h2>Projects</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>CROSS</h3>
+          <p>
+            Cross-layer coordination and optimization for scalable and sparse tensor networks. TensorWorld leads
+            NSF-supported work on abstractions, systems, and performance portability for tensor network workloads.
+          </p>
+          <p class="meta">NSF PPoSS LARGE, 2023-2028</p>
+        </article>
+        <article class="card">
+          <h3>Sparse Tensor Systems</h3>
+          <p>
+            We design algorithms, data structures, and runtime support for sparse tensor contraction, decomposition,
+            and related kernels on CPUs, GPUs, and emerging architectures.
+          </p>
+        </article>
+        <article class="card">
+          <h3>AI Performance Tooling</h3>
+          <p>
+            Our group builds profiling and analysis tools for modern ML workloads, with an emphasis on data types,
+            memory behavior, GPU execution, and framework-level performance bottlenecks.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Irregular Applications</h3>
+          <p>
+            We study performance optimization for irregular algorithms in graph, hypergraph, tensor, and scientific
+            computing workloads, including auto-tuning and architecture-aware implementation strategies.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="content-section">
+      <div class="section-header">
+        <p class="section-kicker">New Results</p>
+        <h2>Recent Publications</h2>
+      </div>
+      <div class="list-card">
+        <ul class="publication-list">
+          <li>
+            <h3>TypeCraft: A Lightweight Data Type Profiler with High Resolution</h3>
+            <p>Zecheng Li, Xu Liu, Namhyung Kim, Blake Jones, Alexey Alexandrov, Jiajia Li</p>
+            <p class="meta">OSDI 2026 (Accepted)</p>
+          </li>
+          <li>
+            <h3>SparseZETA: Intelligent Auto-Tuner for Designing High-Performance SpMV Programs</h3>
+            <p>Zhen Du, Ying Liu, Xionghui Chen, Yanbo Zhao, Xiaobing Feng, Huimin Cui, Jiajia Li</p>
+            <p class="meta">PLDI 2026 (Accepted)</p>
+          </li>
+          <li>
+            <h3>SmartDispatch: Dynamic Substitution of NumPy-style APIs on Heterogenous CPU-GPU Systems</h3>
+            <p>Jinku Cui, Yueming Hao, Shuyin Jiao, Jiajia Li, Xu Liu</p>
+            <p class="meta">FSE 2026 (Accepted)</p>
+          </li>
+          <li>
+            <h3>G-HEMP: Fast Multi-GPU Private Inference for Large-Scale GCNs with Homomorphic Encryption</h3>
+            <p>Ran Ran, Zhaoting Gong, Zhaowei Li, Xianting Lu, Jiajia Li, Wujie Wen</p>
+            <p class="meta">MLSys 2026 (Accepted)</p>
+          </li>
+          <li>
+            <h3>STTID: High-Performance Sparse Tensor-Train Interpolative Decomposition</h3>
+            <p>Zhaonan Meng, Miles Stoudenmire, Karl Pierce, Frank Mueller, Jiajia Li</p>
+            <p class="meta">IPDPS 2026</p>
+          </li>
+          <li>
+            <h3>RedSan: A Redundant Memory Instruction Sanitizer for GPU Programs</h3>
+            <p>Yanbo Zhao, Yueming Hao, Zecheng Li, Shuyin Jiao, Xu Liu, Jiajia Li</p>
+            <p class="meta">SC 2025</p>
+          </li>
+          <li>
+            <h3>DeepContext: A Context-aware, Cross-platform, and Cross-framework Tool for Performance Profiling and Analysis of Deep Learning Workloads</h3>
+            <p>Qidong Zhao, Hao Wu, Yueming Hao, Zilingfeng Ye, Jiajia Li, Xu Liu, Keren Zhou</p>
+            <p class="meta">ASPLOS 2025</p>
+          </li>
+          <li>
+            <h3>FASTEN: Fast GPU-accelerated Segmented Matrix Multiplication for Heterogenous Graph Neural Networks</h3>
+            <p>Keren Zhou, Karthik Ganapathi Subramanian, Po-Hsun Lin, Matthias Fey, Binqian Yin, Jiajia Li</p>
+            <p class="meta">ICS 2024</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="software" class="content-section">
+      <div class="section-header">
+        <p class="section-kicker">Open Source</p>
+        <h2>Software</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3><a href="https://github.com/pnnl/HiParTI">HiParTI</a></h3>
+          <p>A hierarchical parallel tensor infrastructure for sparse and structured tensor computing.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://gitlab.com/tensorworld/pasta">PASTA</a></h3>
+          <p>A parallel sparse tensor algorithm benchmark suite spanning CPUs and GPUs.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/hpcgarage/ParTI">ParTI</a></h3>
+          <p>A parallel tensor infrastructure for data analysis and tensor kernels.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/hpcgarage/AdaTM">AdaTM</a></h3>
+          <p>Adaptive tensor memoization support for CP decomposition.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/hpcgarage/InTensLi">InTensLi</a></h3>
+          <p>Input-adaptive and in-place dense tensor-times-matrix multiplication.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://gitlab.com/fruitfly1026/smat">SMAT</a></h3>
+          <p>A sparse matrix-vector multiplication auto-tuner.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="people" class="content-section">
+      <div class="section-header">
+        <p class="section-kicker">Team</p>
+        <h2>People</h2>
+      </div>
+      <div class="people-layout">
+        <article class="list-card">
+          <h3>Faculty</h3>
+          <ul class="people-list">
+            <li>
+              <strong><a href="http://jiajiali.org/">Jiajia Li</a></strong>
+              <span>PI, Department of Computer Science, NC State University</span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="list-card">
+          <h3>Ph.D. Students</h3>
+          <div class="subgroup">
+            <h4>Current</h4>
+            <ul class="people-list">
+              <li><strong>Feiyang Zheng</strong><span>Started 2025</span></li>
+              <li><strong>Devadatta Mandaogane</strong><span>Started 2025</span></li>
+              <li><strong>Rahmy Salman</strong><span>Started 2024</span></li>
+              <li><strong>Zhaonan Meng</strong><span>Started 2024</span></li>
+              <li><strong>Sai Krishna Teja Varma Manthena</strong><span>Started 2024</span></li>
+              <li><strong>Zecheng Li</strong><span>Started 2023</span></li>
+              <li><strong>Sogolsadat Mansouri</strong><span>Started 2022</span></li>
+              <li><strong>Yanbo Zhao</strong><span>Co-advised, started 2022</span></li>
+              <li><strong>Yi Wang</strong><span>Co-advised, started 2021</span></li>
+              <li><strong>Jinku Cui</strong><span>Co-advised, started 2020</span></li>
+            </ul>
+          </div>
+          <div class="subgroup">
+            <h4>Alumni</h4>
+            <ul class="people-list">
+              <li><strong>Qidong Zhao</strong><span>Co-advised, graduated 2025, Google</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="list-card">
+          <h3>Master's Students</h3>
+          <div class="subgroup">
+            <h4>Current</h4>
+            <ul class="people-list">
+              <li><strong>Zizhong Wang</strong><span>Started 2025</span></li>
+            </ul>
+          </div>
+          <div class="subgroup">
+            <h4>Alumni</h4>
+            <ul class="people-list">
+              <li><strong>Sri Harshavardhan Reddy Deverapalli</strong><span>Graduated 2026, NCSU</span></li>
+              <li><strong>Mushtaq Ahmed Shaikh</strong><span>Graduated 2025</span></li>
+              <li><strong>Ahmed Taimoor</strong><span>Graduated 2025, NCSU</span></li>
+              <li><strong>Devadatta Mandaogane</strong><span>Graduated 2025, NCSU</span></li>
+              <li><strong>Swarnamalya Mohan</strong><span>Graduated 2024</span></li>
+              <li><strong>Sounder Rajendran</strong><span>Graduated 2024, AMD</span></li>
+              <li><strong>Sai Krishna Teja Varma Manthena</strong><span>Graduated 2024, NCSU</span></li>
+              <li><strong>Karthik Ganapathi Subramanian</strong><span>Graduated 2024</span></li>
+              <li><strong>Po-Hsun Lin</strong><span>Graduated 2024</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
