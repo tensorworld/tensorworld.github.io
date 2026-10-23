@@ -311,3 +311,14 @@ main {
 .post-content p { margin: 0 0 14px; }
 .post-content h2,
 .post-content h3 { margin: 20px 0 10px; }
+
+/* Make person-name links in the People section clearly clickable */
+.people-list a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.people-list a:hover,
+.people-list a:focus {
+  color: var(--accent-strong);
+}
