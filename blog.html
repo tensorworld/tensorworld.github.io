@@ -1,0 +1,32 @@
+---
+layout: default
+nav: blog
+title: Blog
+permalink: /blog/
+---
+    <section class="content-section">
+      <div class="section-header">
+        <p class="section-kicker">Notes &amp; Updates</p>
+        <h2>Blog</h2>
+      </div>
+      <div class="list-card">
+        {% if site.posts.size > 0 %}
+        <ul class="publication-list">
+          {% for post in site.posts %}
+          <li>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p class="meta">{{ post.date | date: "%B %-d, %Y" }}{% if post.author %}, {{ post.author }}{% endif %}</p>
+            {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <ul class="publication-list">
+          <li>
+            <h3>Coming soon</h3>
+            <p>Research notes, tutorials, and group updates will appear here.</p>
+          </li>
+        </ul>
+        {% endif %}
+      </div>
+    </section>

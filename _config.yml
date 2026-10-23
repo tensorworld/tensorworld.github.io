@@ -1,0 +1,14 @@
+title: TensorWorld
+description: >-
+  TensorWorld is a research group focused on high-performance computing, sparse and
+  structured tensor methods, irregular algorithms, and systems for AI and scientific workloads.
+url: "https://tensorworld.github.io"
+baseurl: ""
+
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - README.md
+  - logo-preview.html
+  - Gemfile
+  - Gemfile.lock
